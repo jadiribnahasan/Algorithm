@@ -1,10 +1,3 @@
-'''
-
-                            Online Python Compiler.
-                Code, Compile, Run and Debug python program online.
-Write your code in this editor and press "Run" button to execute it.
-
-'''
 '''making representative of their own'''
 def makeset(n):
     par[n] = n
@@ -27,7 +20,6 @@ def find(n):
     par[n] = find(par[n])
     return par[n]
         
-
 def isfriend(a , b):
     u = find(a)
     v = find(b)
@@ -42,7 +34,6 @@ par = [None] * (element+1)
 for i in range(1 , element+1):
     makeset(i)
     
-
 union(1,5)
 union(1,5)
 isfriend(1,3)
