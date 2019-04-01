@@ -16,7 +16,6 @@ def union(a,b):
 def find(n):
     if par[n] == n:
         return n
-    
     par[n] = find(par[n])
     return par[n]
         
@@ -32,7 +31,7 @@ element = 5
 par = [None] * (element+1)
 
 for i in range(1 , element+1):
-    makeset(i)
+    makeset(i)  
     
 union(1,5)
 union(1,5)
